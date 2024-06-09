@@ -1,0 +1,6 @@
+import{j as s,u as n,l as f,s as g,a as u,C as j}from"./index-79e5c316.js";import{M as h}from"./MainTitle-c66f71be.js";import{P as v}from"./PopularProductCard-437f6a1a.js";import{B as L}from"./BackLink-e2309473.js";import{L as N}from"./Loader-bfba4f21.js";import"./Form-8ceb5221.js";const b=()=>s.jsx("section",{className:"no-scrollbar flex flex-col items-center justify-start overflow-hidden",children:s.jsx(h,{className:`
+        text-3xl
+        bg-gradient-to-r
+        from-red-300
+        via-orange-500
+        to-deep-red bg-clip-text text-center text-transparent drop-shadow-[0_1px_3px_rgba(250,250,250,1)]`,children:"No followed shoes"})}),_=()=>{var a;const i=n(f),r=n(g),l=((a=u().state)==null?void 0:a.from)??"/",o=r.filter(t=>i.find(e=>e===t._id));return r?s.jsx("section",{children:s.jsxs(j,{className:"max-container mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8",children:[s.jsx(L,{to:l,children:"Back"}),o.length===0&&s.jsx(b,{}),o.length>0&&s.jsx("ul",{className:"mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8",children:o.map(({_id:t,imgURL:e,name:c,price:x,rating:m,color:d,category:p})=>s.jsx(v,{_id:t,imgURL:e,name:c,price:x,rating:m,color:d,category:p},t))})]})}):s.jsx(N,{})};export{_ as default};
