@@ -15,7 +15,7 @@ const PageNotFound = lazy(() => import('./pages/PageNotFound'));
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ecommerce-basic-react">
       <Suspense fallback={<p>...Loading</p>}>
         <Routes>
           <Route path="/" element={<Layout />}>
