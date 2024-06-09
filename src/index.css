@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent-color-bg-color: #ffffff;
+  --accent-color-text-color: #121417;
+}
+
+:root.dark {
+  --accent-color-bg-color: linear-gradient(90deg, #64748b 0%, #020617 100%);
+  --accent-color-text-color: #ffffff;
+}
+
+@font-face {
+  font-family: 'Octin Sports';
+  src: url('assets/fonts/octin\ sports\ rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ethnocentric';
+  src: url('assets/fonts/ethnocentric.rg-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* chrome */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* The thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 4, 4);
+}
+
+.scroll-style::-webkit-scrollbar {
+  @apply w-2 scroll-smooth rounded-3xl bg-gradient-to-b from-white to-white/5  dark:shadow-slate-400 dark:bg-slate-300 shadow-inner;
+}
+.scroll-style::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+.scroll-style::-webkit-scrollbar-thumb {
+  @apply w-2 scroll-smooth rounded-3xl bg-gradient-to-b from-white to-white/5  dark:shadow-slate-400 dark:bg-slate-300 shadow-inner;
+}
+
+body {
+  margin: 0;
+
+  background: var(--accent-color-bg-color);
+  color: var(--accent-color-text-color);
+
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-style: normal;
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray bg-transparent pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7 dark:text-slate-700;
+  }
+
+  .mobile-navbar-menu {
+    @apply w-[24px] h-[24px] fill-slate-950 hover:fill-deep-red dark:hover:fill-deep-red focus:fill-deep-red dark:focus:fill-deep-red dark:fill-white cursor-pointer transition duration-200 ease-in-out;
+  }
+
+  .mobile-navbar-close {
+    @apply w-[24px] h-[24px] stroke-slate-950 hover:stroke-deep-red focus:stroke-deep-red dark:stroke-white cursor-pointer transition duration-200 ease-in-out;
+  }
+  .btn-cart {
+    @apply w-[20px] h-[20px] fill-slate-600 hover:fill-deep-red focus:fill-deep-red dark:fill-white cursor-pointer transition duration-200 ease-in-out;
+  }
+
+  .blur-cart {
+    @apply bg-white/80 bg-clip-padding  backdrop-blur-sm bg-opacity-70 opacity-100 z-[100] shadow-lg shadow-slate-100 transition duration-200 ease-in-out;
+  }
+  .bg-cart {
+    @apply bg-deep-red shadow-lg hover:bg-red-600 focus:bg-red-600 transition duration-200 ease-in-out;
+  }
+}
