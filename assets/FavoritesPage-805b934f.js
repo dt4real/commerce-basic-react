@@ -1,4 +1,4 @@
-import{j as s,u as n,l as f,s as g,a as u,C as j}from"./index-dd0ac356.js";import{M as h}from"./MainTitle-fc750bab.js";import{P as v}from"./PopularProductCard-56439128.js";import{B as L}from"./BackLink-48554b19.js";import{L as N}from"./Loader-ce86dfd2.js";import"./Form-de036a22.js";const b=()=>s.jsx("section",{className:"no-scrollbar flex flex-col items-center justify-start overflow-hidden",children:s.jsx(h,{className:`
+import{j as s,u as n,l as f,s as g,a as u,C as j}from"./index-c832d6df.js";import{M as h}from"./MainTitle-d08d1344.js";import{P as v}from"./PopularProductCard-549628d3.js";import{B as L}from"./BackLink-52d5e84d.js";import{L as N}from"./Loader-73dee1f5.js";import"./Form-606be4cd.js";const b=()=>s.jsx("section",{className:"no-scrollbar flex flex-col items-center justify-start overflow-hidden",children:s.jsx(h,{className:`
         text-3xl
         bg-gradient-to-r
         from-red-300
